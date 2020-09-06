@@ -5,7 +5,7 @@ See rinn_example.py and constrained_GA_example.py for simple examples of RINN an
 RINN was written with older versions of TensorFlow and works here (with warnings) with TensorFlow 1.14. It has not been updated
 for later versions of TensorFlow, but probably works with some earlier versions :). 
 
-To run from the command-line (maybe using conda environment with requirements installed):
+To run from the command-line (I recommend using a conda environment with the requirements installed):
 ```
 python rinn_example.py
 ```
