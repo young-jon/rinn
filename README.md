@@ -1,5 +1,5 @@
 # rinn
-Some of the code used in my Redundant Input Neural Network (RINN) work. All of the simulated data used my RINN work is also included here.
+Some of the code and all of the simulated data used in my Redundant Input Neural Network (RINN) work. 
 
 See rinn_example.py and constrained_GA_example.py for simple examples of RINN and the constrained GA (i.e., ES-C). 
 RINN was written with older versions of TensorFlow and works here (with warnings) with TensorFlow 1.14. It has not been updated
