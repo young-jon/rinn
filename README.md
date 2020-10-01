@@ -23,7 +23,7 @@ CUDA_VISIBLE_DEVICES=0 nohup python -u model_selection_example.py &> model_selec
 
 ### For a basic Keras version of the RINN, see rinn_keras.py.  Here is the Keras model code without data or import statements:
 ```python
-# Hyperparams
+# Hyperparameters
 layer_size = 10 
 rr = 0.0005  #regularization rate
 lr = 0.0001  #learning rate
