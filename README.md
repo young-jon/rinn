@@ -56,6 +56,19 @@ h8 = RegularizedDense()(concat7)
 output = RegularizedDense(units=16, activation=None)(h8)
 model = keras.Model(inputs=[input_], outputs=[output])
 
+### Even simpler; use a for loop to generate the hidden layers.
+# num_hid_layers = 8
+
+# input_ = keras.layers.Input(shape=(16,))
+# h = RegularizedDense()(input_)
+# for layer in range(num_hid_layers-1):
+#     concat = keras.layers.Concatenate()([h, input_])
+#     h = RegularizedDense()(concat)
+
+# output = RegularizedDense(units=16, activation=None)(h)
+# model = keras.Model(inputs=[input_], outputs=[output])
+
+
 model.compile(loss='mse', optimizer='adam')
 history = model.fit(train_dataset.features, train_dataset.labels, 
 	                epochs=e, batch_size=bs,
